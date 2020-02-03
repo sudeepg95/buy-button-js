@@ -54,3 +54,8 @@ yarn run docs
 Doc server will run at http://localhost:4000/buy-button-js/
 Docs source files are located in /docs.
 Docs are automatically deployed to gh-pages from master.
+
+
+## Can't run yarn install? 
+
+Try with node version 8

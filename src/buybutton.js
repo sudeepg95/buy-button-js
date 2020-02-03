@@ -8,6 +8,8 @@ import 'core-js/features/array/iterator';
 import 'core-js/features/array/find';
 import 'core-js/features/object/assign';
 import 'core-js/features/object/values';
+import Product from './components/product';
+import Cart from './components/cart';
 
 class UpdatedShopifyBuy extends ShopifyBuy {
   static buildClient(config) {
@@ -17,6 +19,9 @@ class UpdatedShopifyBuy extends ShopifyBuy {
 }
 
 window.ShopifyBuy = window.ShopifyBuy || UpdatedShopifyBuy;
+
+UpdatedShopifyBuy.Product = Product;
+UpdatedShopifyBuy.Cart = Cart;
 
 UpdatedShopifyBuy.UI = window.ShopifyBuy.UI || {
   domains: {},
